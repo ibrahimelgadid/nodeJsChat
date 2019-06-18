@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>caht</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+    <div class='row'>
+        <div class='col-4'>
+            <form id='loginForm'>
+                <div class='input-group my-3'>
+                    <input type="text" id='nameInput' name="" class='form-control'>
+                    <div class='input-group-append'>
+                        <button class='btn btn-success' type="submit"> Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+      <div class="row">
+          <div class="col">
+              <form action="" id="messageForm" class='hidden'>
+
+                  <div class="input-group my-3">
+                      <input type="text" class="form-control" autocomplete="off" placeholder="chat..." id="messageInput">
+                      <div class="input-group-append">
+                          <button class="btn btn-outline-primary" type="submit">
+                              Send
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    <div class="row">
+        <div class="col" id="messagesContainer">
+            
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/chat.js"></script>
+  </body>
+</html>
